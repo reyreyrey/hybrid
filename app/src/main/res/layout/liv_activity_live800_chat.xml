@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/liv_chat_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/liv_chating_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <com.goldarmor.live800lib.ui.view.xlistview.XListView
+            android:id="@+id/liv_chat_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"></com.goldarmor.live800lib.ui.view.xlistview.XListView>
+
+        <Button
+            android:id="@+id/liv_chat_lv_new_message_button"
+            android:layout_width="88dp"
+            android:layout_height="32dp"
+            android:layout_alignRight="@+id/liv_chat_lv"
+            android:layout_alignTop="@+id/liv_chat_lv"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/liv_new_message_red_button"
+            android:text="您有新消息"
+            android:layout_marginRight="-2dp"
+            android:textSize="13sp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:textColor="#b42c1a" />
+    </RelativeLayout>
+
+
+</LinearLayout>

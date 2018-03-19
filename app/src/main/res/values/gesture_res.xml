@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- gesture -->
+    <string name="ges_error">输入错误！您还有%1$d次机会</string>
+    <string name="ges_error1">手势密码输入错误！</string>
+    <string name="set_gesture">设置手势密码</string>
+    <string name="draw_ges">绘制解锁图案</string>
+    <string name="draw_agein">再次绘制解锁密码</string>
+    <string name="ges_no_same">第二次输入的手势密码与第一次不符，请再次输入!</string>
+    <string name="ges_set_success">手势密码设置成功！</string>
+    <string name="ver_gesture">手势密码验证</string>
+    <string name="ges_min_line">最少需要连接%1$d个点</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="finger_system_is_lower">您的系统低于6.0，不能使用指纹！</string>
+    <string name="finger_no_haw">您的设备不支持指纹！</string>
+    <string name="finger_no_lock_screen">请先设置系统锁屏密码或手势！</string>
+    <string name="finger_no_finger">请先设置指纹！</string>
+    <string name="gesture_lock_title">绘制解锁图案</string>
+    <string name="gesture_lock_unlock_usepwd">密码解锁</string>
+    <string name="gesture_ver_usepwd">密码验证</string>
+    <!-- end gesture-->
+
+    <declare-styleable name="Lock9View">
+        <attr name="lock9_nodeSrc" format="color|reference" />
+        <attr name="lock9_nodeOnSrc" format="color|reference" />
+        <attr name="lock9_nodeSize" format="dimension" />
+        <attr name="lock9_nodeAreaExpand" format="dimension" />
+        <attr name="lock9_nodeOnAnim" format="reference" />
+        <attr name="lock9_lineColor" format="color" />
+        <attr name="lock9_lineWidth" format="dimension" />
+        <attr name="lock9_padding" format="dimension" />
+        <attr name="lock9_spacing" format="dimension" />
+        <attr name="lock9_autoLink" format="boolean" />
+        <attr name="lock9_enableVibrate" format="boolean" />
+        <attr name="lock9_vibrateTime" format="integer" />
+    </declare-styleable>
+
+    <style name="LockViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">24dp</item>
+    </style>
+
+</resources>

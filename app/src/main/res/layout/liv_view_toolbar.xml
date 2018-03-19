@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/liv_chating_tool_background"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="64dp"
+        android:background="@color/liv_separation_line" />
+
+    <View
+        android:layout_width="8dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+        <!-- 语音 -->
+
+        <ImageView
+            android:id="@+id/liv_voice_iv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/liv_voice_item" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+        <!-- 相机 -->
+
+        <ImageView
+            android:id="@+id/liv_camera_iv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/liv_camera_item" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+        <!-- 图库 -->
+
+        <ImageView
+            android:id="@+id/liv_library_iv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/liv_library_item" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+        <!-- 表情 -->
+
+        <ImageView
+            android:id="@+id/liv_emotion_iv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/liv_emotion_item" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+        <!-- 更多 -->
+
+        <ImageView
+            android:id="@+id/liv_more_iv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/liv_more_item" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="8dp"
+        android:layout_height="1dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="1dp"
+        android:background="@color/liv_separation_line" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="linecolor">#ff33b5e5</color>
+    <color name="nomal_textcolor">#a1a5ad</color>
+    <color name="finger_nomal">#02baff</color>
+
+    <color name="btncolor_disable">#cdcdcd</color>
+    <color name="btncolor">#d95f00</color>
+
+
+</resources>

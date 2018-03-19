@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="liv_emotion">
+        <item><string name="name">cute.gif</string></item>
+        <item><string name="name">daxiao.gif</string></item>
+        <item><string name="name">like.gif</string></item>
+        <item><string name="name">money.gif</string></item>
+        <item><string name="name">inebriation.gif</string></item>
+        <item><string name="name">doubt.gif</string></item>
+        <item><string name="name">puzzledom.gif</string></item>
+        <item><string name="name">evilGrin.gif</string></item>
+        <item><string name="name">cool_eye.gif</string></item>
+        <item><string name="name">cry.gif</string></item>
+        <item><string name="name">tired.gif</string></item>
+        <item><string name="name">nowords.gif</string></item>
+        <item><string name="name">angry.gif</string></item>
+        <item><string name="name">sweat.gif</string></item>
+        <item><string name="name">embarrassed.gif</string></item>
+        <item><string name="name">ill.gif</string></item>
+        <item><string name="name">sad.gif</string></item>
+        <item><string name="name">supprise.gif</string></item>
+    </string-array>
+
+</resources>

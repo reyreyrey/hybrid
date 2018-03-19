@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 对话界面主题颜色1 -->
+    <color name="liv_chating_them_blued">#6199DE</color>
+    <!-- 对话界面主题颜色2 -->
+    <color name="liv_chating_them2">#FFFFFF</color>
+    <!-- 对话界面背景颜色 -->
+    <color name="liv_chating_background">#E6EEF4</color>
+    <!-- 对话界面收到消息字体颜色 -->
+    <color name="liv_chating_accept_text_color">#323232</color>
+    <!-- 对话界面发出消息字体颜色 -->
+    <color name="liv_chating_send_text_color">#FFFFFF</color>
+    <!-- 对话界面提示字体颜色 -->
+    <color name="liv_chating_hiht_text_color">#989898</color>
+    <!-- 对话界面通知内容背景颜色 -->
+    <color name="liv_chating_notification_background">#D6E5F0</color>
+    <!-- 对话界面通知内容字体颜色 -->
+    <color name="liv_chating_notification_text_color">#50585E</color>
+    <!-- 对话界面控件不可点击颜色 -->
+    <color name="liv_chating_view_unclick">#DDDEDF</color>
+    <!-- 对话界面控件可点击颜色 -->
+    <color name="liv_chating_view_click">#4EBAE4</color>
+    <!-- 对话界面输入框、工具栏、工具栏面板背景颜色 -->
+    <color name="liv_chating_tool_background">#FFFFFF</color>
+    <!-- 分割线颜色 -->
+    <color name="liv_separation_line">#BBBFC1</color>
+
+</resources>

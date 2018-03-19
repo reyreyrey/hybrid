@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tolls="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/satisfactionr_circular_selected_un" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:maxLength="5"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="#099FDE"
+        android:textSize="12sp"
+        tools:text="非常不满意" />
+
+
+</LinearLayout>

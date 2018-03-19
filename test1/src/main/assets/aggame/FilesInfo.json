@@ -1,0 +1,14 @@
+{
+    "/resource/default.thm.json": {
+        "ver": 5, 
+        "md5": "2c15a521bb0fa979fc1f13339831fa38"
+    }, 
+    "/resource/default.res.json": {
+        "ver": 6, 
+        "md5": "f033d2af14784a6cd6b5175b394b0baa"
+    }, 
+    "main.min.js": {
+        "ver": 7, 
+        "md5": "c5dbfe1fccc94ff11731a373543e2e31"
+    }
+}

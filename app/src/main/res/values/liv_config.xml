@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- APPKEY,由live800提供 -->
+    <!--成功-->
+    <string name="liv_app_key">live800_pqvmeuxpl0uh</string>
+    <!-- 缓存路径,例如你想将缓存路径设置为根目录下的live800Cache文件夹,则该处填写为live800Cache/ -->
+    <string name="liv_media_directory">live800Cache/</string>
+    <!-- 客服界面主题颜色 LIVColorThemeRed、LIVColorThemeBlue  LIVColorThemeOrange-->
+    <string name="liv_color_theme">LIVColorThemeBlue</string>
+    <!-- 服务器地址地址由live800提供 -->
+    <string name="liv_server_url">http://daili.dev.live800.com/sdk</string>
+    <!-- 聊天页面顶部导航栏文字 -->
+    <string name="liv_chat_title">在线客服</string>
+
+</resources>

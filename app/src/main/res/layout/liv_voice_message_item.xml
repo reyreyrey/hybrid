@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liv_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="14dp"
+    android:orientation="horizontal" >
+
+    <!-- 通过设置父控件的长度来表示语音的长短 -->
+
+    <View
+        android:id="@+id/liv_lift_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/liv_iv"
+        android:layout_width="14dp"
+        android:layout_height="14dp" />
+
+    <View
+        android:id="@+id/liv_right_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

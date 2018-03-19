@@ -1,0 +1,80 @@
+/**
+ * 打包需要执行如下命令
+ * 引号内为需要生成的版本名字
+ * 版本号是根据当前日志自动生成，理论上如果不修改本机时间的话，版本号一定比上个版本要大
+ * gradle buildTask -P version="1.1.1"
+ */
+ext {
+    packageName_NativalTest = "com.a01.protal"
+    packageName_RunTimeTest = "com.a01.protal"
+    packageName_RunTime = "com.a01.protal"
+
+    //don't forget to config
+    liv800_app_key = "live800_jtvc9oy646zc"
+    liv800_theme = "LIVColorThemeRed"
+    liv800_url = "http://www.liverobot8888.com/sdk"
+
+    //build版本
+    sdkVersion = 27
+    toolsVersion = "27.0.3"
+
+    //最小sdk版本
+    minVersion = 16
+    //当前sdk版本
+    tagVersion = 27
+
+    //app版本名
+
+    autoVersionName = "2.0.1.10"
+    autoVersionCode = vercode()
+
+
+    tinker_basePath = "runtimeTest/"
+    tinker_oldApkPath = tinker_basePath + "android_kashbet_mobile_2.0.1.9.apk"
+    tinker_oldMappingPath = tinker_basePath + "app-runtime-release-mapping.txt"
+    tinker_oldResourceMapPath = tinker_basePath + "app-runtime-release-R.txt"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static def vercode() {
+    return Integer.parseInt(new Date().format("yyMMddHHmm"))
+}
+task buildTask {
+    println autoVersionName
+    if (project.hasProperty("version")) {
+        if (version != "unspecified") {
+            autoVersionName = version
+            println autoVersionName
+        }
+    }
+    println "now versionCode is:" + autoVersionCode + "  versionName is:" + autoVersionName
+}
+afterEvaluate {
+    tasks.matching {
+        // 以process开头以ReleaseJavaRes或DebugJavaRes结尾的task
+        it.name.startsWith('process') && (it.name.endsWith('ReleaseJavaRes') || it.name.endsWith
+                ('DebugJavaRes'))
+    }.each { task ->
+        task.dependsOn(buildTask)  // 任务依赖：执行task之前需要执行dependsOn指定的任务
+    }
+}

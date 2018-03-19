@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mvc.controller.MainActivity">
+    <item
+        android:id="@+id/action_service"
+        android:icon="@drawable/live800"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="ifRoom|withText" />
+
+</menu>

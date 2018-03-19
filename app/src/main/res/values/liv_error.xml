@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="live_error">{
+    "exception": [
+        {
+            "code": "-1",
+            "content": "系统繁忙"
+        },  
+        {
+            "code": "1",
+            "content": "请求失败（客服不在线/忙碌/不在服务时间/黑名单）"
+        },
+          {
+            "code": "19999",
+            "content": "请检查网络"
+        },
+        {
+            "code": "20001",
+            "content": "不合法的渠道类型"
+        },
+        {
+            "code": "20002",
+            "content": "不合法的公共服务帐号"
+        },
+        {
+            "code": "20003",
+            "content": "不合法的访客帐号"
+        },
+        {
+            "code": "20004",
+            "content": "不合法的消息类型"
+        },
+        {
+            "code": "20005",
+            "content": "不合法的内容"
+        },
+        {
+            "code": "20006",
+            "content": "不合法的JSON格式"
+        },
+        {
+            "code": "20007",
+            "content": "请求格式"
+        },
+        {
+            "code": "20008",
+            "content": "POST的数据包为空"
+        },
+        {
+            "code": "20009 ",
+            "content": "签名验证失败"
+        },
+        {
+            "code": "20010",
+            "content": "参数nonce为空"
+        },
+        {
+            "code": "20011",
+            "content": "参数timestamp为空"
+        },
+        {
+            "code": "20012",
+            "content": "参数signature为空"
+        },
+        {
+            "code": "20013",
+            "content": "请求流编码不支持"
+        },
+        {
+            "code": "20014",
+            "content": "请求流读取错误"
+        },
+        {
+            "code": "20015",
+            "content": "参数channelType为空"
+        },
+        {
+            "code": "20016",
+            "content": "参数msgType为空"
+        },
+        {
+            "code": "20017",
+            "content": "参数serviceAccount为空"
+        },
+        {
+            "code": "20018",
+            "content": "参数userAccount为空"
+        },
+        {
+            "code": "20019",
+            "content": "参数msgTime为空"
+        },
+        {
+            "code": "20020",
+            "content": "参数content为空"
+        },
+        {
+            "code": "20021",
+            "content": "参数locationUrl为空"
+        },
+        {
+            "code": "20022",
+            "content": "参数title为空"
+        },
+        {
+            "code": "20023",
+            "content": "参数url为空"
+        },
+        {
+            "code": "20024",
+            "content": "参数mobileOsName为空"
+        },
+        {
+            "code": "20025",
+            "content": "为空"
+        },
+        {
+            "code": "20026",
+            "content": "为空"
+        },
+        {
+            "code": "20027",
+            "content": "token不合法"
+        },
+        {
+            "code": "20028",
+            "content": "参数fileId为空"
+        },
+        {
+            "code": "20029",
+            "content": "参数name为空"
+        },
+        {
+            "code": "20030",
+            "content": "不合法的运行状态"
+        },
+        {
+            "code": "20031",
+            "content": "参数msgId为空"
+        },
+        {
+            "code": "20032",
+            "content": "参数value为空"
+        },
+        {
+            "code": "20033",
+            "content": "参数id为空"
+        },
+        {
+            "code": "20034",
+            "content": "公司未开通该功能"
+        },
+        {
+            "code": "20035",
+            "content": "公司不存在"
+        },
+        {
+            "code": "20036",
+            "content": "访客对象不存在"
+        },
+        {
+            "code": "20037",
+            "content": "参数mediaId或imageUrl为空"
+        },
+        {
+            "code": "20038",
+            "content": "参数mediaId或voiceUrl为空"
+        },
+        {
+            "code": "20039",
+            "content": "参数mediaId或videoUrl为空"
+        },
+        {
+            "code": "20040",
+            "content": "无效的mediaId"
+        },
+        {
+            "code": "20041",
+            "content": "不合法的文件类型"
+        },
+        {
+            "code": "20042",
+            "content": "上传文件超过上限"
+        }
+    ]
+}</string>
+
+</resources>

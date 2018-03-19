@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_height="320dp">
+
+            <SurfaceView
+                android:id="@+id/main_surface_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></SurfaceView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/liv_back_iv" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/main_press_control"
+                android:layout_width="match_parent"
+                android:background="#000"
+                android:layout_height="match_parent">
+
+
+                <com.goldarmor.live800lib.ui.view.mediaprogressbar.MediaProgressbar
+                    android:id="@+id/liv_recording"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/timeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/liv_recording"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp"
+                    android:text="00:00"
+                    android:textColor="#FFF"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/play_iv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/liv_playback"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="32dp"
+                    android:layout_toLeftOf="@+id/liv_recording"
+                    android:background="@drawable/liv_close_iv"
+                    android:padding="16dp"
+                    android:textColor="#FFF"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_toEndOf="@+id/liv_recording"
+                    android:layout_toRightOf="@+id/liv_recording"
+                    android:background="@drawable/liv_sned_im"
+                    android:padding="16dp"
+                    android:textColor="#FFF"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

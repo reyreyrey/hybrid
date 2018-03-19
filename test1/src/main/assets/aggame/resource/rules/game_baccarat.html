@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>游戏规则</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css"> -->
+  <link rel="stylesheet" href="css/css.css">
+  <!-- <link rel="stylesheet" href="css/waves.css"> -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<ul class="nav nav-pills">
+  <li class="active"><a href="game_baccarat.html">百家乐</a></li>
+  <li><a href="game_dragon_tiger.html">龙虎</a></li>
+  <li><a href="game_shai.html">骰宝</a></li>
+  <!--<li><a href="game_lun.html">轮盘</a></li>
+  <li><a href="game_insurance.html">保险百家乐</a></li>
+  <li><a href="game_two.html">二八杠</a></li>
+  <li><a href="game_nn.html">牛牛</a></li> -->
+</ul>
+
+<div class="container">
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <a class="panel-heading" id="heading1" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+        <h4 class="panel-title">
+          游戏概述
+        </h4>
+      </a>
+      <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
+        <div class="panel-body">
+          百家乐（Baccarat）是源起于法国的一种纸牌游戏，是世界上公认的最文明，最公平的娱乐项目，在各地赌场中也是最受欢迎的玩法之一。在澳门赌场中，百家乐赌桌的数目更是全球赌场之中最多。
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <a class="panel-heading collapsed" role="tab" id="heading2" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+        <h4 class="panel-title">
+          游戏玩法
+        </h4>
+      </a>
+      <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+        <div class="panel-body">
+          <p>本游戏采用8副牌（每副牌52张）来进行，游戏牌数合计416张。</p>
+          <p>“闲家”“庄家”各先派两张牌，以“闲家”先发，如第一轮未分出胜负需再按“牌例”发第二轮的牌，最多每方3张牌，谁最接近9点即为胜方，而相同点数即和局。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <a class="panel-heading collapsed" role="tab" id="heading3" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+        <h4 class="panel-title">
+          点数计算
+        </h4>
+      </a>
+      <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+        <div class="panel-body">
+          <p>2-9的数字牌以牌面点数作计算(2计2点、3计3点，如此类推)，A牌计为1点，而10、J、Q、K牌则以0点计算。加起来等于10的也当作是0点。</p>
+          <p>当任何一家头两张牌的点数总和为8或9，就称为(天生赢家)。</p>
+          <p>派出两张牌后，如果需要补牌，将依照博牌规则向需要补牌方多发一张牌。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <a class="panel-heading collapsed" role="tab" id="heading4" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+        <h4 class="panel-title">
+          博牌规则
+        </h4>
+      </a>
+      <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+        <div class="panel-body">
+          <!-- table-bordered -->
+          <div class="table-wrap">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>闲两牌合计点数</th>
+                  <th>(闲家)</th>
+                  <th>庄两牌合计点数</th>
+                  <th>(庄家)</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>必须博牌</td>
+                  <td>0</td>
+                  <td>必须博牌</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>必须博牌</td>
+                  <td>1</td>
+                  <td>必须博牌</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>必须博牌</td>
+                  <td>2</td>
+                  <td>必须博牌</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>必须博牌</td>
+                  <td>3</td>
+                  <td>若闲家博得第三张牌是8点，庄家不得博牌 </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>必须博牌</td>
+                  <td>4</td>
+                  <td>若闲家博得第三张牌是0，1，8，9点， 庄家不得博牌 </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>必须博牌</td>
+                  <td>5</td>
+                  <td>若闲家博得第三张牌是0，1，2，3，8，9点， 庄家不得博牌 </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>不得博牌</td>
+                  <td>6</td>
+                  <td>若闲家博得第三张牌是6 或 7点，庄家必须博牌</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>不得博牌</td>
+                  <td>7</td>
+                  <td>不得博牌</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>例牌，即定胜负</td>
+                  <td>8</td>
+                  <td>例牌，即定胜负 </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>例牌，即定胜负</td>
+                  <td>9</td>
+                  <td>例牌，即定胜负 </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <a class="panel-heading collapsed" role="tab" id="heading5" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+        <h4 class="panel-title">
+          大小、庄/闲对子、庄/闲龙宝
+        、超和</h4>
+      </a>
+      <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+        <div class="panel-body">
+          <p><b>大小：</b>指根据当局所开之牌张数的总和为依据，4张牌为小，5张牌或6张牌为大。游戏中，若庄家及闲家各只发两张牌，合共4张牌，即押注「小」者为胜。相反，若庄、闲任一方有博牌，令总牌数为5或6张，即押注「大」者为胜。 </p>
+          <p><b>庄/闲对子：</b>指根据当局所开之牌的庄/闲前两张牌的牌面（数字或字母，不计花式）为依据，牌面相同为对子。游戏中，庄家前两张牌的牌面相同，为庄对子，即押注「庄对」者为胜。闲家前两张牌牌面相同，为闲对子，即押注「闲对」者为胜。 </p>
+          <p><b>庄/闲龙宝：</b>根据传统玩法的庄/闲牌型： </p>
+          <div class="table-wrap">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>庄 / 闲胜出情况</th>
+                  <th>赔率</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>以非例牌赢9点</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>以非例牌赢8点</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>以非例牌赢7点</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>以非例牌赢6点</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>以非例牌赢5点</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>以非例牌赢4点</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>以例牌胜出</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>例牌和局</td>
+                  <td>退回本金</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p><b>例牌定义：</b>首两牌结果为8或9点</p>
+          <p><b>非例牌定义：</b>例牌之外的所有情况</p>
+          <p><b>超和：</b>指超和（super tie），庄闲为和的情况下，和的点数，包括「和0」~「和9」共十个超级和的点数；例如：游戏中，庄家、闲家开牌结果均为0时，即押注「和0」者为胜。
+	</br>各超和投注赔率如下：</p>
+          <div class="table-wrap">
+	            <table class="table table-striped">
+	              <thead>
+	                <tr>
+	                  <th>和点数</th>
+	                  <th>赔率</th>
+	                </tr>
+	              </thead>
+
+	              <tbody>
+	                <tr>
+	                  <td>9</td>
+	                  <td>1:80</td>
+	                </tr>
+	                <tr>
+	                  <td>8</td>
+	                  <td>1:80</td>
+	                </tr>
+	                <tr>
+	                  <td>7</td>
+	                  <td>1:45</td>
+	                </tr>
+	                <tr>
+	                  <td>6</td>
+	                  <td>1:45</td>
+	                </tr>
+	                <tr>
+	                  <td>5</td>
+	                  <td>1:110</td>
+	                </tr>
+	                <tr>
+	                  <td>4</td>
+	                  <td>1:120</td>
+	                </tr>
+	                <tr>
+	                  <td>3</td>
+	                  <td>1:200</td>
+	                </tr>
+	                <tr>
+	                  <td>2</td>
+	                  <td>1:225</td>
+	                </tr>
+	                <tr>
+	                  <td>1</td>
+	                  <td>1:215</td>
+	                </tr>
+	                <tr>
+	                  <td>0</td>
+	                  <td>1:150</td>
+	                </tr>
+	              </tbody>
+	            </table>
+	 </div>
+	 <p>当每一靴牌进入第31局或以後，玩家将不得投注超和。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <a class="panel-heading collapsed" role="tab" id="heading6" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+        <h4 class="panel-title">
+          包桌（VIP）百家乐
+        </h4>
+      </a>
+      <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+        <div class="panel-body">
+          <p><b>下注模式</b></p>
+          <p>1.包桌（VIP）百家乐有旁观下注，进桌下注，进入包桌三种方式;</p>
+          <p>2.当桌台没玩家，人数为0时，玩家只能选择进入包桌成为桌主</p>
+          <p>3.当桌台人数已满（7人）时，玩家只能选择旁观下注。</p>
+          <p>4.当桌台还有座位时，玩家可以选择进桌下注或者旁观下注。 </p>
+          <p>5.若包桌桌主退出游戏厅其他玩家也会自动退出</p>
+          <br/>
+          <p><b>下注限红</b></p>
+          <p>1."进入包桌"：下注限红是游戏桌台定义的VIP限红。</p>
+          <p>2."进桌下注"/ "旁观下注"：下注限红是游戏桌台定义的普通限红。</p>
+          <br/>
+          <p><b>桌主的特别权限：</b></p>
+          <p>1.咪牌: 在庄/闲下注之后，可以咪庄或者闲家牌；</p>
+          <p>2.飞牌:未下注的情况下直接开牌;</p>
+          <p>3.设定包桌：包桌玩家可以设置"是否咪牌"，"是否竖向咪牌"，以及"是否设置密码"；</p>
+          <p>4.更换荷官：更换当前荷官；</p>
+          <p>5.更换牌靴：若该靴满30局，玩家可以选择换靴；</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <a class="panel-heading collapsed" role="tab" id="heading7" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+        <h4 class="panel-title">
+          投注种类与派彩
+        </h4>
+      </a>
+      <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+        <div class="panel-body">
+          <p>本游戏为玩家提供超级百家乐玩法、免佣百家乐玩法，玩家可在游戏大厅设置是否参与免佣百家乐玩法。这两种玩法的博牌规则和投注种类一致，但投注庄的派彩方式有区别。其投注种类与派彩分别如下：</p>
+          <p><b>经典百家乐：</b> </p>
+          <p>下注闲家，1赔1 (开和局时退回下注金额)  <br>
+            下注庄家，1赔0.95 (开和局时退回下注金额)   <br>
+            下注和局，1赔8 <br>
+            下注庄对子，1赔11  <br>
+            下注闲对子，1赔11 <br>
+            下注大，1赔0.5 <br>
+            下注小，1赔1.5
+          </p>
+
+          <p><b>免佣百家乐：</b> </p>
+          <p>下注闲家，1赔1 (开和局时退回下注金额) <br>
+            下注庄家，1赔1(如庄以6点取胜，则赔一半；开和局时退回下注金额) <br>
+            下注和局，1赔8<br>
+            下注庄对子，1赔11<br>
+            下注闲对子，1赔11<br>
+            下注大，1赔0.5<br>
+            下注小，1赔1.5
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <a class="panel-heading collapsed" role="tab" id="heading8" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+        <h4 class="panel-title">
+          点数计算
+        </h4>
+      </a>
+      <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+        <div class="panel-body">
+          <p>♢ 当每一靴牌进入第31局或以后，玩家将不得投注大小。</p>
+          <p>♢ 桌台限红是本游戏桌台主要玩法的最小、最大玩法限红。玩家可通过限红选择切换不同桌台限红。</p>
+          <p>♢ 荷官发牌时，偶有系统无法判读状况时，此时荷官将重新扫描，直到系统能够完整判读(如遇故障因素将注销所有相关注单/派彩)。</p>
+          <p>♢ 如遇结算错误，按照当期视频结果重新结算。</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

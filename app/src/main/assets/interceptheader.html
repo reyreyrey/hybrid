@@ -1,0 +1,120 @@
+<script language="JavaScript">
+	//$(document).ready(function(){
+		if (typeof appClient == 'undefined') {
+			appClient = {};
+			appClient.ajaxPost = function(){};
+			appClient.formPost = function(){};
+		}
+
+		function getRandomId() {
+			$timestmp = Date.now();
+			$randId = parseInt(Math.random()*1000000);
+			return $timestmp+$randId;
+		}
+
+		function getWholeUrl(url) {
+			var host = location.host;
+			if(!/^https?:\/\//.test(url)) {
+				if (url[0] == '/'){
+					url = location.protocol + '//' + host + url;
+				} else {
+					url = location.protocol + '//' + host +'/'+ url;
+				}
+			}
+			return url;
+		}
+
+		function toString(url, data) {
+			var params = {
+				data:data,
+				url:url
+			};
+			return JSON.stringify(params);
+		}
+
+	    HTMLFormElement.prototype._submit = HTMLFormElement.prototype.submit;
+	    HTMLFormElement.prototype.submit = interceptor;
+
+	    window.addEventListener('submit', function(e) {
+	        interceptor(e);
+	    }, true);
+
+	    function interceptor(e) {
+	        var frm = e ? e.target : this;
+	        interceptor_onsubmit(frm);
+	        frm._submit();
+	    }
+
+	    function interceptor_onsubmit(f) {
+	        var jsonArr = [];
+	        for (i = 0; i < f.elements.length; i++) {
+	            var parName = f.elements[i].name;
+	            var parValue = f.elements[i].value;
+	            var parType = f.elements[i].type;
+
+	            jsonArr.push({
+	                name : parName,
+	                value : parValue,
+	                type : parType
+	            });
+	        }
+
+	        if (f.action.indexOf('?') != -1) {
+	        	f.action = f.action+'&postId='+getRandomId();
+	        } else {
+	        	f.action = f.action+'?postId='+getRandomId();
+	        }
+	        appClient.formPost(toString(getWholeUrl(f.action), jsonArr));
+	    }
+	    if (typeof $ == 'undefined') {
+            Object.defineProperties(window, {
+                $:{
+                    writeable:true,
+                    get:function() {
+                        return window.$alia;
+                    },
+                    set:function(value) {
+                        window.$alia = value;
+                        value.ajaxSetup({
+                            beforeSend:function(ajxhd){
+                                if (this.url.indexOf('?') != -1) {
+                                    this.url = this.url+'&postId='+getRandomId();
+                                } else {
+                                    this.url = this.url+'?postId='+getRandomId();
+                                }
+                                appClient.ajaxPost(toString({url:getWholeUrl(this.url), data:this.data}));
+                            }
+                        });
+                    }
+                }
+            })
+	       /* <!--lastXmlhttpRequestPrototypeMethod = null;-->
+            <!--lastXmlReqUrl = null;-->
+            <!--XMLHttpRequest.prototype.reallyOpen = XMLHttpRequest.prototype.open;-->
+            <!--XMLHttpRequest.prototype.open = function(method, url, async, user, password) {-->
+                <!--lastXmlhttpRequestPrototypeMethod = method;-->
+                <!--lastXmlReqUrl = url;-->
+                <!--this.reallyOpen(method, url, async, user, password);-->
+            <!--};-->
+            <!--XMLHttpRequest.prototype.reallySend = XMLHttpRequest.prototype.send;-->
+            <!--XMLHttpRequest.prototype.send = function(body) {-->
+                <!--appClient.ajaxPost(tostring(lastXmlReqUrl, body));-->
+                <!--lastXmlhttpRequestPrototypeMethod = null;-->
+                <!--lastXmlReqUrl = null;-->
+                <!--this.reallySend(body);-->
+            <!--};-->*/
+	    } else {
+	        $.ajaxSetup({
+                beforeSend:function(ajxhd){
+                    if (this.url.indexOf('?') != -1) {
+                        this.url = this.url+'&postId='+getRandomId();
+                    } else {
+                        this.url = this.url+'?postId='+getRandomId();
+                    }
+                    appClient.ajaxPost(toString({url:getWholeUrl(this.url), data:this.data}));
+                }
+            });
+	    }
+	//});
+
+</script>

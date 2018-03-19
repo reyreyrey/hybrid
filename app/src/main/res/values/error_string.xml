@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hybrid_can_not_find_mudule">找不到需要调用的module</string>
+    <string name="hybrid_parse_appbridge_error">解析AppBridge的消息出错！</string>
+    <string name="hybrid_can_not_find_method">找不到要调用的方法！请检查方法名字，必须是三个参数，两个string类型一个PostWebView类型，比如 test(String requestId,String data, PostWebView webview), 修饰符必须是public</string>
+    <string name="hybrid_can_not_invoke_method">调用方法出错！错误原因：%1$s</string>
+    <string name="hybrid_no_instant">此类不能new</string>
+    <string name="hybrid_no_config_file">请检查assets文件夹中是否有config.properties配置文件</string>
+    <string name="hybrid_no_gateeay_api_url">请在config.properties中配置gateway_url</string>
+
+    <string name="hybrid_connect_error">网络连接失败，请检查您的网络。</string>
+    <string name="hybrid_connect_timeout">网络请求超时，请稍后再试。</string>
+
+    <string name="hybrid_common_net_error">网络错误，请重试！</string>
+    <string name="hybrid_no_host">网络错误，请重启App后重试</string>
+
+    <string name="hybrid_error_need_config_theme">请配置主题！</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fontsize_14">14dp</dimen>
+    <dimen name="fontsize_15">15dp</dimen>
+    <dimen name="fontsize_16">16dp</dimen>
+    <dimen name="fontsize_17">17dp</dimen>
+    <dimen name="fontsize_18">18dp</dimen>
+    <dimen name="fontsize_19">19dp</dimen>
+    <dimen name="fontsize_20">20dp</dimen>
+    <dimen name="space">4dp</dimen>
+    <dimen name="draw_size">7dp</dimen>
+    <dimen name="linehight">2dp</dimen>
+    <dimen name="bottom">30dp</dimen>
+    <dimen name="bottom1">20dp</dimen>
+
+    <dimen name="ic_printer_size">36dp</dimen>
+    
+    <dimen name="nodeSize">70dp</dimen>
+    <dimen name="nodeAreaExpand">5dp</dimen>
+    <dimen name="m_24">24dp</dimen>
+</resources>

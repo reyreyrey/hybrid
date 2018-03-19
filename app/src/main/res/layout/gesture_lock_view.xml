@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.ivi.hybrid.gesture.views.Lock9View
+        android:id="@+id/lock_9_view"
+        style="@style/LockViewStyle"
+        app:lock9_autoLink="true"
+        app:lock9_enableVibrate="true"
+        app:lock9_lineColor="#ff33b5e5"
+        app:lock9_lineWidth="4dp"
+        app:lock9_nodeAreaExpand="@dimen/nodeAreaExpand"
+        app:lock9_nodeSize="@dimen/nodeSize"
+        app:lock9_vibrateTime="20" />
+</layout>

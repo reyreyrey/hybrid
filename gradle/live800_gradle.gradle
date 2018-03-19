@@ -1,0 +1,15 @@
+android {
+
+    buildTypes {
+        release {
+            resValue "string", "liv_app_key", liv800_app_key
+            resValue "string", "liv_color_theme", liv800_theme
+            resValue "string", "liv_server_url", liv800_url
+        }
+        debug {
+            resValue "string", "liv_app_key", liv800_app_key
+            resValue "string", "liv_color_theme", liv800_theme
+            resValue "string", "liv_server_url", liv800_url
+        }
+    }
+}

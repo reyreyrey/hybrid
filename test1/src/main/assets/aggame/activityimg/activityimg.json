@@ -1,0 +1,18 @@
+{
+    "A01": {},
+    "A02": {},
+    "A03": {},
+    "A04": {},
+    "A05": {},
+    "A06": {},
+    "B01": {},
+    "B79": {},
+    "C01": {},
+    "C02": {},
+    "E03": {},
+    "E04": {},
+    "ALL": {
+        "rule":{"isshow":true,"imgtype":4,"url_l":"/activityimg/race_rules_l_0113.png","url_p":"/activityimg/race_rules_p_0113.png","link":""},
+        "result":{"isshow":true,"imgtype":4,"url_l":"/activityimg/race_results_l_0113.png","url_p":"/activityimg/race_results_p_0113.png","link":""}
+    }
+}

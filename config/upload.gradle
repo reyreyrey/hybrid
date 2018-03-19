@@ -1,0 +1,30 @@
+uploadArchives {
+    repositories {
+        mavenDeployer {
+//            repository(url: "http://10.66.72.173:8081/nexus/content/repositories/releases/") {
+            repository(url: "http://10.66.72.173:8082/nexus/repository/maven-releases/") {
+//            repository(url: "http://10.66.72.51:8081/nexus/content/repositories/releases/") {
+//                authentication(userName: "admin", password: "1234qwer")
+                authentication(userName: "developer", password: "developer123")
+            }
+
+            pom.groupId = "com.rea"
+            pom.artifactId = 'hybridLib'
+            //pom.version = "20171124-nocache-resolve_exception"
+            pom.version = "20180315-2"
+
+            pom.project {
+                name 'hybrid'
+                packaging "com.rea"
+                description 'Belong to Rea'
+                url 'https://www.barry.com'
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+            }
+        }
+    }
+}

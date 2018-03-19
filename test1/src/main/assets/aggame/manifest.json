@@ -1,0 +1,29 @@
+{
+	"ver":"v0.7.6.5",
+	"res":"_d2bd6048",
+	"thm":"_2eb049b8",
+	"initial": [
+		"library/sonic/bin/sonic/sonic.min_e329ffa7.js",
+		"libs/modules/egret/egret.min_fbfdc887.js",
+		"libs/modules/egret/egret.web.min_ac5fd475.js",
+		"libs/modules/eui/eui.min_f4aff3ff.js",
+		"libs/modules/res/res.min_4291b0eb.js",
+		"libs/modules/tween/tween.min_6f299977.js",
+		"libs/modules/game/game.min_fa64f44f.js",
+		"libs/modules/socket/socket.min_9efd21b0.js",
+		"library/md5/bin/md5/md5.min_546fb1ea.js",
+		"library/agstream/bin/agstream/agstream.min_a8fdf52e.js",
+		"library/base64/bin/base64/base64.min_28357e6c.js",
+		"library/format4js/bin/format4js/format4js.min_e924927f.js",
+		"library/pako/bin/pako/pako.min_5883e86.js",
+		"library/dateformat/bin/dateformat/dateformat.min_6d2e840d.js",
+		"library/long/bin/long/long.min_c4370975.js",
+		"library/promise/bin/promise.min_107dbaaa.js",
+		"library/protobuf/bin/protobuf.min_327b5c68.js",
+		"library/protos/bin/protos.min_4dc82866.js"
+	],
+	"game": [
+		"config.js",
+		"main_5bc03cd.js"
+	]
+}

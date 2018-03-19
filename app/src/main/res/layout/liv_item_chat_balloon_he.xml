@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/liv_chating_background" >
+    <RelativeLayout
+        android:id="@+id/liv_system_time_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/liv_chat_system" >
+
+        <TextView
+            android:id="@+id/liv_system_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/liv_chating_accept_text_color"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.goldarmor.live800lib.ui.view.roundrectimageview.RoundRectImageView
+        android:id="@+id/liv_service_photo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="用户头像"
+        android:src="@drawable/liv_default_avatar1" />
+
+    <RelativeLayout
+        android:id="@+id/liv_size_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/liv_system_time_rl"
+        android:layout_marginRight="56dp"
+        android:layout_toRightOf="@+id/liv_service_photo" >
+
+        <RelativeLayout
+            android:id="@+id/liv_chat_show_say_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/liv_balloon_he" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/liv_tv_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/liv_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/liv_chat_show_say_rl"
+            android:textColor="@color/liv_chating_accept_text_color"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

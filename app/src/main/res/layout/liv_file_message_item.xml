@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:background="#3e57ab">
+
+
+    <RelativeLayout
+        android:id="@+id/liv_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/liv_chat_show_say"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            tools:background="@drawable/liv_doc_type_zip" />
+
+        <TextView
+            android:id="@+id/liv_file_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/liv_chat_show_say"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/liv_chat_show_say"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            tools:text="SDK-文件" />
+
+        <TextView
+            android:id="@+id/liv_file_size_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/liv_chat_show_say"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/liv_chat_show_say"
+            android:textColor="#737070"
+            android:textSize="14sp"
+            tools:text="1024KB" />
+
+
+        <TextView
+            android:id="@+id/liv_file_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/liv_chat_show_say"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/liv_file_size_tv"
+            android:text="正在下载"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/liv_progressbar_drawable"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@id/liv_chat_show_say"
+            android:layout_alignRight="@+id/liv_file_type_tv"
+            android:layout_below="@+id/liv_file_size_tv"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:progress="50" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

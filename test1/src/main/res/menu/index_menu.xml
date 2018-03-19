@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_msg"
+        android:icon="@drawable/ic_index_msg"
+        android:title=""
+        app:actionProviderClass="com.a01.protal.providers.BadgeActionPrivoder"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/action_customer"
+        android:icon="@drawable/ic_index_headset"
+        android:title=""
+        app:showAsAction="always|withText" />
+
+</menu>

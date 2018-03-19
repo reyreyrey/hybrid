@@ -1,0 +1,260 @@
+body {
+	color: #bcbcbc;
+	background-color: #18151e;
+	font-family: "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", sans-serif, arial;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+  line-height: 2;
+}
+
+ol, li, p {
+  color: #e1cea2;
+}
+
+.main-container {
+  position: relative;
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+
+.section {
+  position: relative;
+}
+
+.section .bg-img {
+  position: absolute;
+  z-index: -1;
+}
+
+.content-two p .list-number-sm, .content-one p .list-number-sm {
+  width: 2.3%;
+  float: left;
+  margin-top: 0.8%;
+  margin-left: 0.8%;
+}
+
+.content-two p .list-number-lg {
+  width: 4.3%;
+  float: left;
+}
+.content-two p img {
+  width: 2.5%;
+  margin-top:1%;
+  float: left;
+}
+
+.content-four p {
+  color: #cbbb96;
+  line-height: 1.9;
+  position: relative;
+}
+
+
+.content-four p img {
+  width: 3.5%;
+  margin-top: 0.5%;
+  float: left;
+}
+
+.content {
+  z-index: 1;
+  padding: 5% 2%;
+  padding-bottom: 10%;
+}
+
+.sections {
+  margin-top: -5.5%;
+}
+
+.description {
+  color: #d8c189;
+}
+
+.description-title {
+  color: #efd276
+}
+.description .description-bold {
+  font-weight: bold;
+}
+
+.text-gold {
+	color: #efd276;
+}
+
+.text-light-silver {
+  color: #e6b85e;
+  font-weight: normal;
+}
+.text-dark-gold {
+  color: #fe8c14;
+}
+.text-light-gold {
+  font-weight: 500;
+}
+}
+
+.text-dark-gray {
+  color: #7e7e7e;
+}
+
+.content-two .box-images {
+
+  display: block;
+  margin: 0 auto;
+  width: 100% !important;
+  z-index: -1;
+}
+
+
+/*Tables*/
+table {
+  width: 100%;
+  background-color: transparent;
+}
+
+thead {
+      background-color: #3d3328;
+      color: #ddb582 !important;
+    }
+
+  td,th {
+      border: 0.5px solid #3b3328 !important;
+      padding: 16px;
+      vertical-align: middle;
+    }
+table>tbody>tr>td {
+  background-color: rgba(41, 40, 36, 0.5);
+  color: #ffeec6;
+  font-weight: normal;
+}
+
+
+ul, ol {
+  list-style: none;
+	padding: 2% 4.1%;
+  padding-right: 0px;
+  padding-left: 8%;
+    margin: 0;
+    line-height: 1.9;
+}
+
+.chinese-number li :nth-child(1) {
+  content: '一.'
+}
+
+.delivery-rules, .rules {
+  padding-left: 0;
+}
+
+.delivery-rules li, .rules li {
+    margin: 0;
+    padding-left: 1.5em;
+    position: relative;    
+  }
+  .delivery-rules li {
+    padding-left: 1.3em;
+  }
+
+.delivery-rules li:after, .rules li:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: .65em;
+      left: 0;
+    }
+
+.delivery-rules li:after {
+    transform: rotate(45deg);
+    height: .6em;
+    width: .6em;
+    top: .65em;
+    }
+
+.delivery-rules li:after {
+    background: #efd276;
+    }
+.rules li:after {
+  height: 1em;
+  width: 1em;
+  top: .45em;
+}
+.rules li span img {
+  width: 35px;
+  display: block;
+  position: absolute;
+  left: -1%;
+  top: 4.5%
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: scale(.9) translateY(0);
+    transform: scale(.9) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(10px);
+    transform: scale(1) translateY(10px);
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: scale(.9) translateY(0);
+    transform: scale(.9) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(10px);
+    transform: scale(1) translateY(10px);
+  }
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+.title-header {
+  font-size: 35px;
+}
+
+
+.table_background {
+  width: 100%;
+  background-image: url('../../static/images/mobile/table_background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.table_background thead {
+    background-color: transparent;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 1024px) {
+   p { padding-top: 10px;}
+
+  /*Calculator for responsive fontsize*/
+  html{ font-size:calc(100vw * 23 / 750); }
+    .countdown p { font-size: 1.444vw; }
+    .title-header {font-size: 3.2vw;}
+    .countdown .bold { font-size: 2.111vw; }
+    .content p { font-size: 2.4vw; }
+    .content-four p { font-size: 2.3vw; }
+    .prices-list .price-one {font-size: 4.555vw;}
+    .prices-list2 .price-two {font-size: 2.444vw;}
+    .prices-list3 .price-two {font-size: 2.444vw;}
+  .title { font-size:calc(100vw * 23 / 750); }
+  .rule-title { font-size:calc(100vw * 23 / 750); }
+  .description { font-size:calc(100vw * 32 / 750) !important; }
+  .description-title {font-size: 3.222vw;}
+  td,th { font-size: 2.4vw !important; padding: calc(100vw * 10 / 750);}
+  .lg-number { font-size:calc(100vw * 31 / 750); }
+  ul li {font-size: 2.4vw;}
+  ol li {font-size:calc(100vw * 19 / 750);}
+  .rules li span img { width: 4.2%; }
+}

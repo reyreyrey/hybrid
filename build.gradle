@@ -1,0 +1,20 @@
+buildscript {
+    repositories {
+        maven { url "http://10.66.72.173:8082/nexus/repository/GoogleMaven/" }
+        maven { url "http://10.66.72.173:8082/nexus/repository/JCenter/" }
+        maven { url "http://10.66.72.173:8082/nexus/repository/maven-central/" }
+        maven { url "http://10.66.72.173:8082/nexus/repository/maven-releases/" }
+        maven { url "http://10.66.72.173:8082/nexus/repository/jitpack.io/"}
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0-alpha01'
+        classpath "com.tencent.tinker:tinker-patch-gradle-plugin:1.9.2"
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+apply from: 'config/dependencies.gradle'

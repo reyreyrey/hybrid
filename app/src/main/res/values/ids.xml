@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_password_forget" type="id"/>
+    <item name="tv_password_lock" type="id"/>
+    <item name="btn_right" type="id"/>
+</resources>

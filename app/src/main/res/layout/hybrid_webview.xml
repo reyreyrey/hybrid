@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/pbloading"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:max="100"
+                android:progress="0" />
+
+            <FrameLayout
+                android:id="@+id/fullFramlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <com.ivi.hybrid.core.webview.x5.PostWebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:id="@+id/tv_fail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="当前网络不可用！请稍候再试！"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbCircleLoading"
+            android:layout_width="wrap_content"
+            android:indeterminateDrawable="@drawable/loading_annmation"
+            style="@android:style/Widget.Holo.ProgressBar"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</layout>

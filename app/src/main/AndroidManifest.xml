@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hybrid">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <!-- live800 -->
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--电话权限-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--短信权限-->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 允许读取手机状态权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 定位相关 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 录制音乐 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 电源相关的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 关于相机的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- live800-->
+
+    <application>
+        <service
+            android:name="com.ivi.hybrid.core.push.services.PushService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="com.rea.push.service" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.ivi.hybrid.core.log.LogService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="com.rea.log.service" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.ivi.hybrid.core.push.receivers.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.rea.push.alarm" />
+
+                <action android:name="com.rea.push.CLICK_NOTIFY" />
+                <action android:name="com.rea.push.RECEIVER_MESSAGE" />
+                <action android:name="com.rea.push.RECEIVER_MESSAGE_DIALOG" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.ivi.hybrid.core.update.DownloadAppService" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/AutoUpdateprovide"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.ivi.hybrid.ui.activitys.ExceptionActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+
+
+        <!-- live800 START-->
+        <activity
+            android:name="com.goldarmor.live800lib.ui.activity.LIVChatActivity"
+            android:fitsSystemWindows="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- 主动满意度评价界面 -->
+        <activity
+            android:name="com.goldarmor.live800lib.ui.activity.EvaluateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.goldarmor.live800lib.ui.activity.EvaluateWebActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <!-- 相册界面 -->
+
+        <activity
+            android:name="com.goldarmor.live800lib.ui.activity.ShowPhotoActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <!-- 图片详情界面 -->
+
+        <activity
+            android:name="com.goldarmor.live800lib.ui.activity.ImageViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <!--小视频录制界面-->
+        <activity
+            android:name="com.goldarmor.live800lib.ui.activity.MediaActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <!--小视频播放界面-->
+        <activity
+            android:name="com.goldarmor.live800lib.ui.activity.ShowVideoActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <!-- 地理定位信息界面 -->
+
+        <activity
+            android:name="com.goldarmor.live800lib.ui.activity.LocationActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <!-- liv800核心service -->
+
+        <service
+            android:name="com.goldarmor.live800lib.live800sdk.receiver.LIVReceiverService"
+            android:enabled="true" />
+        <!-- 用户服务 -->
+        <service android:name="com.goldarmor.live800lib.ui.service.ChatService" />
+
+        <!-- live800 end -->
+
+
+    </application>
+
+</manifest>

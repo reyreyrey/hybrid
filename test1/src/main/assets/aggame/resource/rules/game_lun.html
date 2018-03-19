@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>游戏规则</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css"> -->
+  <link rel="stylesheet" href="css/css.css">
+  <!-- <link rel="stylesheet" href="css/waves.css"> -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<ul class="nav nav-pills">
+  <li><a href="game_baccarat.html">百家乐</a></li>
+  <li><a href="game_dragon_tiger.html">龙虎</a></li>
+   <li><a href="game_shai.html">骰宝</a></li>
+  <li class="active"><a href="game_lun.html">轮盘</a></li>
+  <!--<li><a href="game_insurance.html">保险百家乐</a></li>
+  <li><a href="game_two.html">二八杠</a></li>
+  <li><a href="game_nn.html">牛牛</a></li> -->
+</ul>
+
+<div class="container">
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <a class="panel-heading" id="heading1" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+        <h4 class="panel-title">
+          游戏概述
+        </h4>
+      </a>
+      <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
+        <div class="panel-body">
+          <p>本游戏是采用国际标准的单零轮盘，单零轮盘上共有37 个细长沟道。其中一个绿色沟道的数字编号为0，另外36个沟道分别编号为1 至36，一半是红色一半是黑色。 玩家可以买单一数字或赌桌上的数字组合。</p>
+		  <p>下注结束后，荷官会把轮盘向一个方向转动，然后把象牙制滚球抛到轮盘的外侧，让滚球在轮盘内转动多周后慢慢停下来，并降落在其中一个细沟内为该局结果。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <a class="panel-heading collapsed" role="tab" id="heading2" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+        <h4 class="panel-title">
+          游戏玩法
+        </h4>
+      </a>
+      <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+        <div class="panel-body">
+         <p><b>1、</b> 开始新局后，即开始下注倒数计时，请玩家在桌面不同的方格内或方格的边界上押放筹码。</p>
+         <p><b>2、</b> 倒数结束前由荷官转动轮盘，并抛出滚球。</p>
+		 <p><b>3、</b> 由荷官输入结果数字，同时玩家画面显示结果。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <a class="panel-heading collapsed" role="tab" id="heading3" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+        <h4 class="panel-title">
+          投注种类与派彩 
+        </h4>
+      </a>
+      <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+        <div class="panel-body">
+          <p>轮盘的投注方式有 12个种类，各项投注类型与派彩赔率如下:</p>
+          <div class="table-wrap">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>投注种类</th>
+                  <th>说明</th>
+                  <th>赔率（不含本金）</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>直接注</td>
+                  <td>1个号码（投注包括 0在内的任意一个数位。下注时将筹码放到那个数位的中心）</td>
+                  <td>1赔35</td>
+                </tr>
+                <tr>
+                  <td>分注</td>
+                  <td>2个号码（投注于两个号码之间的格线上 。如2和3）</td>
+                  <td>1赔17</td>
+                </tr>
+                <tr>
+                  <td>街注</td>
+                  <td>3个一行的数（投注三个号码。将筹码押在轮盘桌上有三个数位那一行右侧的那条边线上）</td>
+                  <td>1赔11</td>
+                </tr>
+                <tr>
+                  <td>三数</td>
+                  <td>0,1,2（投注于 0, 1, 2交接区域）或0,2,3（投注于0, 2, 3的交接区域）</td>
+                  <td>1赔11</td>
+                </tr>
+                <tr>
+                  <td>角注</td>
+                  <td>4个数交叉（将筹码放到四个数位方框交差的那个角区）</td>
+                  <td>1赔8</td>
+                </tr>
+                <tr>
+                  <td>四个号码</td>
+                  <td>0,1,2,3（将筹码放到 0和3交线的右侧以下注数位 0, 1, 2 和3）</td>
+                  <td>1赔8</td>
+                </tr>
+                <tr>
+                  <td>线注</td>
+                  <td>两行相交的顶部（将筹码下注到两行相交的最顶部的交点处（虚拟桌右侧），6个数字）</td>
+                  <td>1赔5</td>
+                </tr>
+                <tr>
+                  <td>列注</td>
+                  <td>每列12个号码（桌上每列数位底部都有带'第*列 ' 字样的方框，12个号码，不含零）</td>
+                  <td>1赔2</td>
+                </tr>
+                <tr>
+                  <td>下注一打</td>
+                  <td>将筹码下到有 "第一打"，"第二打"和"第三打"字样的赌区以同时下注 12个数位。 (分别为1-12、13-24及25-36)。 </td>
+                  <td>1赔2</td>
+                </tr>
+                <tr>
+                  <td>红色/黑色</td>
+                  <td>投注开奖号码为红色或黑色。若开0则通杀</td>
+                  <td>1赔1</td>
+                </tr>
+                 <tr>
+                  <td>双数/单数</td>
+                  <td>投注开奖号码为单数或双数。若开0则通杀</td>
+                  <td>1赔1</td>
+                </tr>
+                  <tr>
+                  <td>大/小</td>
+                  <td>小（1-18）；大（19-36）；若开0则通杀</td>
+                  <td>1赔1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <a class="panel-heading collapsed" role="tab" id="heading4" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+        <h4 class="panel-title">
+          法式下注
+        </h4>
+      </a>
+      <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+        <div class="panel-body">
+        <p><b>法式下注：</b>以椭圆形画出轮盘上的分区（号码、颜色），而后根据玩法不同分隔为4个分区（轮盘下角注、轮上孤注、零旁注上角、轮上零旁），法式下注提供5种投注种类</p>
+		<p><b>投注方式：</b>使用筹码点击"法式下注"的椭圆形轮盘对应的玩法，轮盘投注桌上显示每个玩法投注的筹码，点击确定时将所选玩法提交下单。</p>
+		<p><b>投注种类:</b></p>
+          <!-- table-bordered -->
+          <div class="table-wrap">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>投注种类</th>
+                  <th>注数</th>
+                  <th>投注号位</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>轮上零旁</td>
+                  <td>4</td>
+                  <td>0/3； 12/15； 32/35； 26</td>
+                </tr>
+                <tr>
+                  <td>零旁注上角</td>
+                  <td>9</td>
+                  <td>4/7；12/15；18/21；19/22；32/35 一注   0/2/3 两注   25/26/28/29 两注 </td>
+                </tr>
+                <tr>
+                  <td>轮上孤注</td>
+                  <td>5</td>
+                  <td>6/9； 14/17； 17/20； 31/34； 1</td>
+                </tr>
+                <tr>
+                  <td>轮盘下角注</td>
+                  <td>6</td>
+                  <td>5/8； 10/11； 13/16； 23/24； 27/30； 33/36 </td>
+                </tr>
+                <tr>
+                  <td>相邻投注</td>
+                  <td>5</td>
+                  <td>投注轮盘上该号码及左邻与右邻各两个号码（一共5个号码）。 例如：选中18，则投注号码为：9；22；18；29；7 </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <p>*法式下注投注成功需要满足：1、每个玩法的投注金额符合该玩法限红和玩家个人限红要求；2、投注金额不得超过玩家可用余额。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <a class="panel-heading collapsed" role="tab" id="heading5" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+        <h4 class="panel-title">
+          点数计算
+        </h4>
+      </a>
+      <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+        <div class="panel-body">
+          <p>* 桌台限红是本游戏桌台主要玩法的最小、最大玩法限红。玩家可通过限红选择切换不同桌台限红。 </p>
+		  <p>* 骰子摇动后，偶有稳定后无法判读点数状况时，此时荷官将重摇骰，直到能够完整判读(如遇故障因素将注销所有相关注单/派彩)。 </p>
+		  <p>* 如遇结算错误，按照当期视频结果重新结算。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="#9499c7">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/liv_shape_corners_evaluate_white_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:text="请您对本次服务进行评价"
+            android:textColor="#333333" />
+
+        <LinearLayout
+            android:id="@+id/evaluate_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            tools:background="#FFFFF">
+
+
+        </LinearLayout>
+        <!--问题详细描述-->
+        <LinearLayout
+            android:id="@+id/evaluate_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#E3E3E3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:includeFontPadding="false"
+                android:text="请您回复不满意的原因"
+                android:textColor="#333333" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_lv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@null"
+                android:orientation="vertical"
+                tools:layout_height="200dp"></LinearLayout>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/liv_edit_radius"
+            android:gravity="left|top"
+            android:hint="请填写不满意的原因，以便我们更好的为您服务"
+            android:padding="7dp"
+            android:textColor="#333333"
+            android:scrollbars="vertical"
+            android:textColorHint="#CCCCCC"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/common_2dp_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/liv_shape_corners_evaluate_button"
+            android:includeFontPadding="false"
+            android:text="提交" />
+    </LinearLayout>
+
+
+</LinearLayout>

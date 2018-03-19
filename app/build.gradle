@@ -1,0 +1,42 @@
+apply from: "../config/lib_module.gradle"
+//apply from: "../config/doc_release.gradle"
+//apply from: '../config/check_style.gradle'
+
+apply plugin: 'maven'
+apply from: "../config/upload.gradle"
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api dep.appcompat
+    api dep.design
+    api dep.constraint
+    api dep.gson
+    api dep.rxjava2
+    api dep.rxandroid2
+    api dep.barlibrary
+    api dep.circleDialog
+    api dep.acp
+    api dep.rxbinding
+    api dep.shortcutBadger
+    api dep.flurry
+    api dep.multidex
+    //Tinker
+    api dep.tinker
+    api dep.tinkerAnno
+    api dep.tray
+    //    api dep.logger
+    api dep.litepal
+    api dep.daemon
+    api dep.okgo
+    api dep.jsoup
+    api dep.stetho
+    api dep.jobqueue
+    api dep.androideventbus
+    api files('libs/Live800ChatLib.jar')
+    api files('libs/ormlite-android-5.0.jar')
+    api files('libs/ormlite-core-5.0.jar')
+    api files('libs/tbs_sdk_thirdapp_v3.3.0.1045_43300_sharewithdownload_withoutGame_obfs_20170605_170212.jar')
+    api files('libs/universal-image-loader-1.9.3.jar')
+    api files('libs/volley_library-1.0.19.jar')
+    api files('libs/BaiduLBS_Android.jar')
+}

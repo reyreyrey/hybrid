@@ -1,0 +1,18 @@
+.table-majiang{
+  border-radius:5px;
+  width: 100%;
+  margin-bottom:20px;
+}
+
+.table-majiang th,
+.table-majiang td {
+  text-align:center;
+  color:#1c1c1c;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 10px;
+}
+
+.table-majiang th{
+  border-top:1px #ad8538 solid;
+}

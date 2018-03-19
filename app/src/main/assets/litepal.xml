@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="hybrid_db" />
+    <version value="11" />
+    <list>
+        <mapping class="com.ivi.hybrid.core.log.LogMessage" />
+        <mapping class="com.ivi.hybrid.core.log.StartupMessage" />
+    </list>
+</litepal>

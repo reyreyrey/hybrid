@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#dfcc3f"
+        android:layout_height="match_parent">
+
+        <!--相机界面开始-->
+        <RelativeLayout
+            android:id="@+id/recorder_surface_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#994d4d">
+
+        </RelativeLayout>
+        <!--相机界面结束-->
+
+        <!--选项面板开始-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--上方的工具栏-->
+            <RelativeLayout
+                android:id="@+id/recorder_flashlight_parent"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="#FFF"
+               >
+
+                <!--闪光灯-->
+                <TextView
+                    android:id="@+id/recorder_flashlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="闪光灯"
+                    android:textColor="#FFF"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/recorder_frontcamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:text="切换摄像头"
+                    android:textColor="#FFF"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/recorder_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="取消"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+            <!--进度条-->
+            <com.goldarmor.live800lib.mode.video.ProgressView
+                android:id="@+id/recorder_progress"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@id/recorder_flashlight_parent"
+                tools:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/recorder_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:background="#f4f3f3"
+                tools:layout_height="56dp">
+
+
+                <TextView
+                    android:id="@+id/recorder_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:enabled="false"
+                    android:text="保存"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+
+            <!--这个是屏幕录制的状态-->
+            <TextView
+                android:id="@+id/recorder_surface_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recorder_progress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:scaleType="center"
+                android:textColor="#FFF"
+                tools:text="按住屏幕任意位置开始拍摄" />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+</RelativeLayout>
+

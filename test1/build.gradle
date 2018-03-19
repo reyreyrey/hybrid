@@ -1,0 +1,16 @@
+apply from: '../gradle/common_gradle.gradle'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+//    compile 'com.rea:hybridLib:20180126-1'
+
+    implementation project(":app")
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+    implementation 'com.android.support:multidex:1.0.2'
+    androidTestImplementation 'com.android.support:multidex:1.0.2'
+    androidTestImplementation 'com.android.support:multidex-instrumentation:1.0.2'
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">博天堂</string>
+    <string name="tab1">首页</string>
+    <string name="tab2">  优惠  </string>
+    <string name="tab3">咨询客服</string>
+    <string name="tab4">会员中心</string>
+    <string name="host_error">网络错误，请重启App后重试</string>
+    <string name="tab2_no_login">登录/开户</string>
+    <string name="customer_url">https://www.why918.com/chat/chatClient/chatbox.jsp?companyID=8990&amp;configID=21&amp;k=1&amp;codeType=custom</string>
+</resources>

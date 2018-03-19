@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/liv_system_time_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/liv_chat_system" >
+
+        <TextView
+            android:id="@+id/liv_system_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/liv_chating_accept_text_color"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!-- android:layout_below="@+id/liv_system_time_rl" -->
+
+    <com.goldarmor.live800lib.ui.view.roundrectimageview.RoundRectImageView
+        android:id="@+id/liv_service_photo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/liv_system_time_rl"
+        android:background="@drawable/liv_default_avatar"
+        android:contentDescription="用户头像" />
+
+    <RelativeLayout
+        android:id="@+id/liv_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/liv_service_photo"
+        android:layout_toLeftOf="@+id/liv_service_photo" >
+
+        <!-- 语音图片的固定高度是14dp -->
+        <!-- 14+16+16 -->
+
+        <RelativeLayout
+            android:id="@+id/liv_size_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" >
+
+            <RelativeLayout
+                android:id="@+id/liv_chat_show_say_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/liv_balloon_me" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/liv_tv_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp" >
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/liv_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/liv_size_rl"
+            android:textColor="@color/liv_chating_accept_text_color"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/liv_send_type"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/liv_time_tv"
+            android:background="@drawable/liv_warning"
+            android:contentDescription="发送状态提示"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>
